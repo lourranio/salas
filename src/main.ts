@@ -11,9 +11,6 @@ import './style.css';
 // Importa o JavaScript do Bootstrap para habilitar componentes como dropdowns, modais, etc.
 import 'bootstrap';
 
-// URL para embutir a planilha principal. O `&amp;rm=minimal` limpa a interface.
-const SPREADSHEET_EMBED_URL = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/edit?usp=sharing&amp;rm=minimal`;
-
 // URL para buscar a lista de concursos como um arquivo CSV.
 const CONCURSO_LIST_CSV_URL = `https://docs.google.com/spreadsheets/d//gviz/tq?tqx=out:csv&sheet=`;
 
