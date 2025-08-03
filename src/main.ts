@@ -3,15 +3,6 @@ import './style.css';
 // Importa o JavaScript do Bootstrap para habilitar componentes como dropdowns, modais, etc.
 import 'bootstrap';
 
-// --- CONFIGURAÇÃO ---
-const SPREADSHEET_ID = '1O7FWd6-Pv53QJGArbKfSQjGpnlZVGdW_J_K-sUweBNs';
-
-import './style.css';
-// Importa o JavaScript do Bootstrap para habilitar componentes como dropdowns, modais, etc.
-import 'bootstrap';
-
-
-
 // URL para buscar a lista de concursos como um arquivo CSV.
 const CONCURSO_LIST_CSV_URL = `https://docs.google.com/spreadsheets/d//gviz/tq?tqx=out:csv&sheet=`;
 
