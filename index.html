@@ -1,10 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Depois -->
+    <script type="module" crossorigin src="/dist/assets/index-D1lDV__d.js"></script>
     <title>Meu Site Incrível</title>
-  </head>
+  </head><!doctype html>
+  
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>SALAS - Acompanhamento de Concursos</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SALAS Concursos</a>
+        </div>
+      </nav>
+  
+      <main class="container mt-5">
+        <div class="p-5 mb-4 bg-light rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Acompanhamento de Concursos</h1>
+            <p class="col-md-8 fs-4">Selecione um concurso na lista abaixo para visualizar e editar as informações diretamente na planilha.</p>
+            <div class="mb-3">
+              <label for="concursoSelector" class="form-label">Selecione o Concurso:</label>
+              <select class="form-select" id="concursoSelector">
+                <option selected>Carregando concursos...</option>
+              </select>
+            </div>
+          </div>
+        </div>
+  
+        <div id="spreadsheet-container" class="ratio ratio-16x9">
+          <!-- O Iframe da planilha será inserido aqui pelo TypeScript -->
+        </div>
+      </main>
+  
+      <script type="module" src="/src/main.ts"></script>
+    </body>
+  </html>
+  
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
@@ -24,4 +62,6 @@
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
+
+
 
