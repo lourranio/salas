@@ -1,0 +1,23 @@
+{
+  "name": "salas",
+  "private": true,
+  "version": "0.0.0",
+  "homepage": "https://lourranio.github.io/salas",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.7"
+  }
+}
