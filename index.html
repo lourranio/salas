@@ -3,64 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Depois -->
-    <script type="module" crossorigin src="/dist/assets/index.js"></script>    
-  </head><!doctype html>
-  
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>SALAS - Acompanhamento de Concursos</title>
-    </head>
-    <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">SALAS Concursos</a>
-        </div>
-      </nav>
-  
-      <main class="container mt-5">
-        <div class="p-5 mb-4 bg-light rounded-3">
-          <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Acompanhamento de Concursos</h1>
-            <p class="col-md-8 fs-4">Selecione um concurso na lista abaixo para visualizar e editar as informações diretamente na planilha.</p>
-            <div class="mb-3">
-              <label for="concursoSelector" class="form-label">Selecione o Concurso:</label>
-              <select class="form-select" id="concursoSelector">
-                <option selected>Carregando concursos...</option>
-              </select>
-            </div>
-          </div>
-        </div>
-  
-        <div id="spreadsheet-container" class="ratio ratio-16x9">
-          <!-- O Iframe da planilha será inserido aqui pelo TypeScript -->
-        </div>
-      </main>
-  
-      <script type="module" src="/src/main.ts"></script>
-    </body>
-  </html>
-  
+    <title>SALAS - Acompanhamento de Concursos</title>
+  </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Meu Site</a>
+        <a class="navbar-brand" href="#">SALAS Concursos</a>
       </div>
     </nav>
 
     <main class="container mt-5">
-      <div class="bg-light p-5 rounded">
-        <h1>Olá, Mundo com Bootstrap 5 e Vite!</h1>
-        <p class="lead">Esta é uma página de exemplo para o nosso projeto no GitHub Pages.</p>
-        <p>Usamos TypeScript para adicionar interatividade. Clique no botão abaixo!</p>
-        <button id="meuBotao" class="btn btn-lg btn-primary">Clique aqui</button>
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Acompanhamento de Concursos</h1>
+          <p class="col-md-8 fs-4">Selecione um concurso na lista abaixo para visualizar e editar as informações diretamente na planilha.</p>
+          <div class="mb-3">
+            <label for="concursoSelector" class="form-label">Selecione o Concurso:</label>
+            <select class="form-select" id="concursoSelector">
+              <option selected>Carregando concursos...</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div id="spreadsheet-container" class="ratio ratio-16x9">
+        <!-- O Iframe da planilha será inserido aqui pelo TypeScript -->
       </div>
     </main>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
-
-
-

@@ -3,8 +3,15 @@ import './style.css';
 // Importa o JavaScript do Bootstrap para habilitar componentes como dropdowns, modais, etc.
 import 'bootstrap';
 
+// --- CONFIGURAÇÃO ---
+const SPREADSHEET_ID = '1O7FWd6-Pv53QJGArbKfSQjGpnlZVGdW_J_K-sUweBNs';
+const CONCURSO_LIST_SHEET_NAME = 'lista-concurso';
+
+// URL para embutir a planilha principal. O `&amp;rm=minimal` limpa a interface.
+const SPREADSHEET_EMBED_URL = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/edit?usp=sharing&amp;rm=minimal`;
+
 // URL para buscar a lista de concursos como um arquivo CSV.
-const CONCURSO_LIST_CSV_URL = `https://docs.google.com/spreadsheets/d//gviz/tq?tqx=out:csv&sheet=`;
+const CONCURSO_LIST_CSV_URL = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:csv&sheet=${CONCURSO_LIST_SHEET_NAME}`;
 
 // --- SELETORES DO DOM ---
 const concursoSelector = document.querySelector<HTMLSelectElement>('#concursoSelector');
@@ -48,8 +55,8 @@ async function popularConcursos() {
  * Exibe a planilha embutida na página.
  */
 function exibirPlanilha() {
-  if (!spreadsheetContainer) return;
-  spreadsheetContainer.innerHTML = `<iframe src="" style="border:0; width: 100%; height: 100%;"></iframe>`;
+	if (!spreadsheetContainer) return;
+	spreadsheetContainer.innerHTML = `<iframe src="${SPREADSHEET_EMBED_URL}" style="border:0; width: 100%; height: 100%;"></iframe>`;
 }
 
 // --- INICIALIZAÇÃO ---
@@ -57,5 +64,3 @@ document.addEventListener('DOMContentLoaded', () => {
   popularConcursos();
   exibirPlanilha();
 });
-
-
